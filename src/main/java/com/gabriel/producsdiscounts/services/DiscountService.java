@@ -28,7 +28,7 @@ public class DiscountService {
                 .accept(MediaType.APPLICATION_JSON)
                 .retrieve()
                 .bodyToFlux(DiscountResponse.class);
-        Mono.error()
+
         final var discountMono = discounts.collectList().flatMap(discount -> {
             if (discount.isEmpty()) {
                 return Mono.just(
