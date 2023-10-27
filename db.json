@@ -1,0 +1,36 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "name": "Bola de futsal",
+      "price": 69.90
+    },
+    {
+      "id": 2,
+      "name": "Bola de campo",
+      "price": 79.90
+    }
+  ],
+  "descontos": [
+    {
+      "id": 1,
+      "cupom": "natal",
+      "desconto": "0.5"
+    },
+    {
+      "id": 1,
+      "cupom": "natal",
+      "desconto": "0.5"
+    },
+    {
+      "id": 1,
+      "cupom": "newYear",
+      "desconto": "0.3"
+    },
+    {
+      "id": 1,
+      "cupom": "queimaTudo",
+      "desconto": "0.6"
+    }
+  ]
+}
