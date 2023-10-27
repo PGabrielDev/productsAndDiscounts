@@ -1,4 +1,4 @@
-package com.gabriel.producsdiscounts.response;
+package com.gabriel.producsdiscounts.dtos;
 
 public class ProductWithDiscount {
 }

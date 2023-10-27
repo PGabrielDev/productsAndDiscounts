@@ -6,6 +6,7 @@ import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 
 @Service
 
@@ -19,6 +20,13 @@ public class ProductService {
 
     public Flux<ProductResponse> findAll() {
         return this.webClient.get().uri("produtos/")
+                .accept(MediaType.APPLICATION_JSON)
+                .retrieve()
+                .bodyToFlux(ProductResponse.class);
+    }
+
+    public Flux<ProductResponse> findByParameter(String parameter) {
+        return this.webClient.get().uri("produtos?name=" + parameter)
                 .accept(MediaType.APPLICATION_JSON)
                 .retrieve()
                 .bodyToFlux(ProductResponse.class);
