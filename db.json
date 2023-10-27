@@ -18,17 +18,17 @@
       "desconto": "0.5"
     },
     {
-      "id": 1,
-      "cupom": "natal",
-      "desconto": "0.5"
+      "id": 2,
+      "cupom": "feirao",
+      "desconto": "0.2"
     },
     {
-      "id": 1,
+      "id": 3,
       "cupom": "newYear",
       "desconto": "0.3"
     },
     {
-      "id": 1,
+      "id": 4,
       "cupom": "queimaTudo",
       "desconto": "0.6"
     }
