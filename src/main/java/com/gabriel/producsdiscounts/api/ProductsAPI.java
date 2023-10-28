@@ -9,6 +9,7 @@ import reactor.core.publisher.Flux;
 
 @RequestMapping("products")
 @Tag(name = "products", description = "tudo relacionado a produtos e discontos")
+
 public interface ProductsAPI {
 
 
