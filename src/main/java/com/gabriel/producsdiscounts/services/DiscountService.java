@@ -12,7 +12,7 @@ public class DiscountService {
     private final WebClient webClient;
 
     public DiscountService(final WebClient.Builder webClient) {
-        this.webClient = webClient.baseUrl("http://localhost:3000/").build();
+        this.webClient = webClient.baseUrl("https://653c7a2bd5d6790f5ec80428.mockapi.io/api/v1/").build();
     }
 
     public Flux<DiscountResponse> findAll() {
